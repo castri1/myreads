@@ -10,7 +10,7 @@ const Book = (props) => {
         <div className="book-top">
           <div className="book-cover" style={{ width: 128, height: 193, backgroundImage: `url(${imageLinks ? imageLinks.thumbnail : ''})` }}></div>
           <div className="book-shelf-changer">
-            <MoveTo shelf={shelf || 'default'} onChangeBookShelf={onChangeBookShelf} />
+            <MoveTo shelf={shelf || 'none'} onChangeBookShelf={onChangeBookShelf} />
           </div>
         </div>
         <div className="book-title">{title}</div>
