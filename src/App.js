@@ -1,10 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 import sortBy from 'sort-by';
-import SearchBooks from './SearchBooks';
-import BooksList from './BooksList';
-import Loading from './Loading';
-import * as BooksAPI from './BooksAPI';
+import { SearchBooks, BooksList, Loading } from './components';
+import * as BooksAPI from './services/BooksAPI';
 import './App.css';
 
 class BooksApp extends React.Component {
